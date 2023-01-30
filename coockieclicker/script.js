@@ -26,13 +26,13 @@ function MuchCoockie() {
 
   document.getElementById("doublesc").innerHTML = "X" + Cptend+" 💪 ";
 
-  score.style.backgroundImage = "url('c2.jpeg')";
+  score.style.backgroundImage = "url(beach.gif)";
   document.getElementById("doublesc").disabled = true;
 
   hiddenconfetie.style.visibility = "visible";
   hiddenconfetie.disabled = true;
   document.querySelector(".notif").style.visibility = "hidden";
-  Autoclick.disabled = false;
+  
 
   if (clicks % 35 == 0) {
     Double();
@@ -151,10 +151,9 @@ function defilerTemps() {
     document.querySelector(".notif").style.visibility = "visible";
     document.querySelector(".notif").innerHTML = " 10 SECONDES Bonus  💯";
 
-    Autoclick.innerHTML =
-      " BONUS = " + "( " + clicks + "+" + bonuseconde + ")<br/>";
+  
 
-    Autoclick.style.backgroundImage = "url('feteforaine1.gif')";
+   
     document.querySelector(".notif").style.fontSize = "1.2rem";
     clicks = clicks + bonuseconde;
   } else {
